@@ -1,0 +1,22 @@
+<div class="container w-50">
+  <h1>Stupid Coaching</h1>
+  <div class="card border border-5 border-end-0 border-top-0 border-bottom-0 rounded-0 mt-3">
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p> <%= @ask %></p>
+        <footer class="blockquote-footer"><cite title="Source Title">You</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+  <div class="card border border-5 border-end-0 border-top-0 border-bottom-0 rounded-0 mt-3 bg-warning bg-opacity-10">
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p> <%= @answer %></p>
+        <footer class="blockquote-footer"><cite title="Source Title">Your coach</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+  <div class="mt-3">
+    <%= link_to "talk to coach again", ask_path, class:"text-decoration-none" %>
+  </div>
+</div>
